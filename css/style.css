@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url(../img/snow-header.jpg);
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.snow1 {
+    background-image: url(../img/let_it_snow7.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateOne 10s infinite linear;
+}
+
+@keyframes animateOne {
+    
+    0% {
+        background-position: 0px 0px;
+    }
+    
+    100% {
+        background-position: 100px 650px;
+    }
+}
+
+.snow2 {
+    background-image: url(../img/let_it_snow6.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateTwo 10s infinite linear;
+}
+
+@keyframes animateTwo {
+    
+    0% {
+        background-position: -100px -100px;
+    }
+    
+    100% {
+        background-position: 100px 650px;
+    }
+}
